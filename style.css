@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* =================== Estilos gerais =================== */
+        body {
+            font-family: Gilda;
+            background-color: #f2f2f2;
+            color: #222;
+            margin: 0;
+            padding: 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* =================== Modo escuro =================== */
+        .dark-mode {
+            background-color: #121212;
+            color: #f2f2f2;
+        }
+
+        .dark-mode .card {
+            background-color: #1f1f1f;
+            border-color: #e4dfdf;
+        }
+
+        .dark-mode button {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* =================== Botão de Modo Escuro =================== */
+        #btn-dark {
+            display: block;
+            margin: 0 auto 30px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        /* =================== Grid de Filmes =================== */
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* =================== Card =================== */
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+        }
+
+        /* Hover */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+        
+            margin: 15px 0 5px;
+        }
+
+        /* =================== Botão Favoritar =================== */
+        .btn-fav {
+            font-family: Roboto;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 10px;
+            transition: background 0.3s;
+
+        }
+
+        .btn-fav:hover {
+            background-color: #0056b3;
+        }
+
+        /* =================== Card Favoritado =================== */
+        .favorito {
+            border: 2px solid gold !important;
+            box-shadow: 0px 0px 15px gold !important;
+            background-color: #fffbe6;
+        }
+
+        .dark-mode .favorito {
+            background-color: #4a3f14;
+        }
